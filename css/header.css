@@ -1,0 +1,37 @@
+header {
+  display: grid;
+  justify-items: center;
+  gap: 3.75rem;
+}
+
+.header-navigation-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+
+  justify-content: center;
+
+  list-style: none;
+}
+
+.header-navigation-bar a {
+  background: #fff;
+
+  padding: 0.9375rem 1.875rem;
+
+  border-radius: 0.25rem;
+}
+
+.header-navigation-bar a:hover {
+  border: 0.1875rem solid #ee2211;
+
+  padding: 0.75rem 1.6875rem;
+}
+
+/* -- MEDIA QUERIES -- */
+
+@media (max-width: 600px) {
+  .header-navigation-bar li {
+    margin-top: 30px;
+  }
+}

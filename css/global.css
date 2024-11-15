@@ -1,0 +1,39 @@
+@import "header.css";
+@import "main.css";
+@import "header.css";
+@import "footer.css";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+  gap: 60px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: #f7f7f7;
+
+  margin-top: 60px;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+a {
+  color: #000;
+
+  text-transform: uppercase;
+  text-decoration: none;
+}

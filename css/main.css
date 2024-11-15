@@ -1,0 +1,129 @@
+.main-article,
+.main-article-vantages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  max-width: 1000px;
+}
+
+.main-information {
+  display: grid;
+  place-items: end;
+  place-content: center;
+  gap: 20px;
+
+  padding: 40px;
+
+  position: relative;
+
+  text-align: right;
+
+  background: #fff;
+}
+
+.main-information::before {
+  content: "";
+
+  width: 60px;
+  height: 4px;
+
+  background: #ee2211;
+
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.main-information-button-link {
+  color: white;
+  background: #ee2211;
+
+  padding: 15px 30px;
+
+  border-radius: 4px;
+
+  transition: background 0.3s;
+}
+
+.main-information-button-link:hover {
+  background: #900;
+}
+
+.main-vantages {
+  display: grid;
+  grid-template-columns: repeat(auto, 1fr);
+
+  gap: 10px 20px;
+
+  padding: 20px;
+}
+
+.main-vantages:hover {
+  border-left: 5px solid #ee2211;
+
+  padding-left: 15px;
+}
+
+.main-vantages:nth-child(odd) {
+  background: #f7f7f7;
+}
+
+.main-vantages-subtitle {
+  grid-column: 2;
+}
+
+.main-vantages-title {
+  display: grid;
+  place-content: center;
+
+  text-align: right;
+
+  padding: 40px;
+
+  background: url(../img/onda.svg);
+}
+
+.main-vantages-text {
+  color: #c6c6c6;
+
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.main-vantages-container {
+  background: #fff;
+
+  padding: 40px;
+}
+
+/* -- MEDIA QUERIES -- */
+
+@media (max-width: 1000px) {
+  .main-image-nimbus img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .main-article-vantages {
+    grid-template-columns: 1fr;
+  }
+
+  .main-vantages-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-article {
+    grid-template-columns: 1fr;
+  }
+
+  .main-information {
+    place-items: center;
+    text-align: left;
+  }
+
+  .main-information::before {
+    display: none;
+  }
+}
