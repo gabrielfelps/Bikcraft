@@ -15,7 +15,7 @@ header {
 }
 
 .header-navigation-bar a {
-  background: #fff;
+  background: var(--secondary-background-color);
 
   padding: 0.9375rem 1.875rem;
 
@@ -23,12 +23,12 @@ header {
 }
 
 .header-navigation-bar a:hover {
-  border: 0.1875rem solid #ee2211;
+  border: 0.1875rem solid var(--primary-color);
 
   padding: 0.75rem 1.6875rem;
 }
 
-/* -- MEDIA QUERIES -- */
+/* MEDIA QUERIES */
 
 @media (max-width: 600px) {
   .header-navigation-bar li {

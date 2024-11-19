@@ -1,5 +1,5 @@
 footer {
-  background: #fff;
+  background: var(--secondary-background-color);
 
   width: 100%;
 

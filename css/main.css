@@ -18,7 +18,7 @@
 
   text-align: right;
 
-  background: #fff;
+  background: var(--secondary-background-color);
 }
 
 .main-information::before {
@@ -27,7 +27,7 @@
   width: 60px;
   height: 4px;
 
-  background: #ee2211;
+  background: var(--primary-color);
 
   position: absolute;
   top: 30px;
@@ -35,8 +35,8 @@
 }
 
 .main-information-button-link {
-  color: white;
-  background: #ee2211;
+  color: #fff;
+  background: var(--primary-color);
 
   padding: 15px 30px;
 
@@ -46,7 +46,7 @@
 }
 
 .main-information-button-link:hover {
-  background: #900;
+  background: var(--primary-color-dark);
 }
 
 .main-vantages {
@@ -59,13 +59,13 @@
 }
 
 .main-vantages:hover {
-  border-left: 5px solid #ee2211;
+  border-left: 5px solid var(--primary-color);
 
   padding-left: 15px;
 }
 
 .main-vantages:nth-child(odd) {
-  background: #f7f7f7;
+  background: var(--primary-background-color);
 }
 
 .main-vantages-subtitle {
@@ -80,23 +80,23 @@
 
   padding: 40px;
 
-  background: url(../img/onda.svg);
+  background: var(--onda);
 }
 
 .main-vantages-text {
-  color: #c6c6c6;
+  color: var(--subtext-color);
 
   font-size: 4rem;
   text-transform: uppercase;
 }
 
 .main-vantages-container {
-  background: #fff;
+  background: var(--secondary-background-color);
 
   padding: 40px;
 }
 
-/* -- MEDIA QUERIES -- */
+/* MEDIA QUERIES */
 
 @media (max-width: 1000px) {
   .main-image-nimbus img {

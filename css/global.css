@@ -1,7 +1,15 @@
 @import "header.css";
 @import "main.css";
-@import "header.css";
 @import "footer.css";
+
+:root {
+  --primary-background-color: #f7f7f7;
+  --secondary-background-color: #ffffff;
+  --primary-color: #e21;
+  --primary-color-dark: #900;
+  --text-color: #000;
+  --subtext-color: #c6c6c6;
+}
 
 * {
   margin: 0px;
@@ -21,7 +29,8 @@ body {
 
   font-family: Arial, Helvetica, sans-serif;
 
-  background: #f7f7f7;
+  background: var(--primary-background-color);
+  color: var(--text-color);
 
   margin-top: 60px;
 }
@@ -32,8 +41,20 @@ p {
 }
 
 a {
-  color: #000;
+  color: var(--text-color);
 
   text-transform: uppercase;
   text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-background-color: #111;
+    --secondary-background-color: #000;
+    --text-color: #fff;
+    --subtext-color: rgba(255, 255, 255, 0.2);
+    --onda: url(../img/onda-escura.svg);
+  }
 }
