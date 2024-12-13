@@ -1,0 +1,83 @@
+.insurance-bg {
+  background: var(--color-12);
+}
+
+.insurance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  padding-block: 3.75rem;
+}
+
+.insurance h2 {
+  grid-column: 1 / -1;
+}
+
+.insurance-plan {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background: var(--color-13);
+  padding: 2rem 2rem 2rem 3.75rem;
+  border-radius: 4px;
+}
+
+.insurance-plan h3 {
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.insurance-plan ul {
+  margin-bottom: 2rem;
+}
+
+.insurance-plan ul li:not(:first-child) {
+  margin-top: 1.25rem;
+}
+
+.insurance-plan li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.insurance-plan li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url("../../images/icones/lista.svg");
+  position: absolute;
+  left: -21px;
+}
+
+.insurance-plan span {
+  display: block;
+}
+
+.insurance-plan span span {
+  text-align: right;
+}
+
+.insurance-plan ul {
+  grid-row-start: 2;
+}
+
+.insurance-plan a {
+  grid-row-start: 3;
+}
+
+@media (max-width: 800px) {
+  .insurance {
+    grid-template-columns: 1fr;
+  }
+
+  .insurance h2 {
+    font-size: 2rem;
+  }
+
+  .insurance h3,
+  .insurance-plan-price {
+    font-size: 1.5rem;
+  }
+}

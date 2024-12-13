@@ -1,0 +1,61 @@
+.container {
+  max-width: 1200px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-inline: auto;
+}
+
+.main-btn {
+  display: inline-block;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  color: var(--color-p5);
+  text-transform: uppercase;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  max-width: max-content;
+}
+
+.main-btn:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.secondary-btn {
+  background: var(--color-11);
+  color: var(--color-3);
+}
+
+.secondary-btn:hover {
+  background: var(--color-10);
+}
+
+.link {
+  display: inline-block;
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  color: var(--color-p1);
+  text-transform: uppercase;
+}
+
+.link:hover {
+  color: var(--color-0);
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: currentColor;
+}
+
+.technology-info a:hover::after {
+  background: currentColor;
+}
+
+@media (max-width: 600px) {
+  .main-btn {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+}

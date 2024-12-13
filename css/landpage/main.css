@@ -1,0 +1,66 @@
+.main-bg {
+  background: var(--color-13) url("../../images/dec/bottom-left.svg") no-repeat bottom 10rem left 1.25rem;
+  box-shadow: inset 0px -120px 0px 0px rgb(255, 255, 255);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.5rem;
+}
+
+.main-info {
+  place-content: flex-end;
+  padding-bottom: 12.5rem;
+}
+
+.main-info-title {
+  margin-bottom: 2rem;
+}
+
+.main-info-text {
+  margin-bottom: 1.25rem;
+}
+
+.main-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .main-info-title {
+    font-size: 3rem;
+  }
+
+  .main-info-text {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-bg {
+    padding-top: 2.5rem;
+    background: var(--color-12);
+    box-shadow: inset 0px -60px 0px 0px rgb(255, 255, 255);
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .main-info {
+    padding: 0rem;
+  }
+
+  .main-info-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-image img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
