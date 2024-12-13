@@ -4,14 +4,18 @@
 @import "./global/footer.css";
 
 /* Utility */
-@import "./utility/typography.css";
-@import "./utility/color.css";
-@import "./utility/utility.css";
+@import "utility/typography.css";
+@import "utility/color.css";
+@import "utility/utility.css";
 
 /* Landpage */
-@import "./landpage/main.css";
-@import "./landpage/bikes.css";
-@import "./landpage/technology.css";
-@import "./landpage/partners.css";
-@import "./landpage/testimonials.css";
-@import "./landpage/insurance.css";
+@import "landpage/main.css";
+@import "landpage/bikes.css";
+@import "landpage/technology.css";
+@import "landpage/partners.css";
+@import "landpage/testimonials.css";
+
+/* Insurance */
+@import "insurance/insurance.css";
+@import "insurance/vantages.css";
+@import "insurance/faq.css";

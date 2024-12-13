@@ -5,6 +5,32 @@
   margin-inline: auto;
 }
 
+.main-bg-title {
+  background: var(--color-12);
+  padding-block: 3.75rem;
+}
+
+.main-title p {
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .main-bg-title {
+    padding-block: 2.5rem;
+  }
+
+  .main-title p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+
+  .main-title h1 {
+    font-size: 2rem;
+  }
+}
+
 .main-btn {
   display: inline-block;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;

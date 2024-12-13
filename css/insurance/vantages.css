@@ -1,0 +1,43 @@
+.vantages-bg {
+  background: var(--color-13);
+}
+
+.vantages {
+  padding-block: 7.5rem;
+}
+
+.vantages h2 {
+  margin-bottom: 3.75rem;
+}
+
+.vantages-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 2.5rem 5rem;
+}
+
+.vantages img,
+.vantages h3 {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .vantages h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .vantages h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .vantages {
+    padding-block: 3.75rem;
+  }
+
+  .vantages-list {
+    gap: 1.25rem;
+  }
+}
