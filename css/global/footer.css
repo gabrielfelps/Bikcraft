@@ -40,6 +40,12 @@
   margin-top: 2.5rem;
 }
 
+@media (max-width: 1200px) {
+  .footer h3 {
+    font-size: 1.125rem;
+  }
+}
+
 @media (max-width: 800px) {
   .footer {
     grid-template-columns: repeat(2, 1fr);
@@ -47,10 +53,6 @@
 
   .footer picture {
     display: none;
-  }
-
-  .footer h3 {
-    font-size: 1.125rem;
   }
 }
 

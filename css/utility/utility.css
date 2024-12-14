@@ -10,9 +10,23 @@
   padding-block: 3.75rem;
 }
 
+.main-title {
+  background: url(../../images/dec/top-right.svg) no-repeat top right 1.25rem;
+}
+
 .main-title p {
   margin-bottom: 0.25rem;
   text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .main-title h1 {
+    font-size: 3rem;
+  }
+
+  .main-title p {
+    font-size: 1.125rem;
+  }
 }
 
 @media (max-width: 800px) {

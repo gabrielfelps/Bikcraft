@@ -19,3 +19,6 @@
 @import "insurance/insurance.css";
 @import "insurance/vantages.css";
 @import "insurance/faq.css";
+
+/* Terms */
+@import "terms/terms.css";
