@@ -1,0 +1,96 @@
+#contact {
+  background: linear-gradient(var(--color-12) 600px, var(--color-1) 0px);
+}
+
+.main-contact {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.main-contact-our {
+  border-radius: 5px 0 0 5px;
+  background: var(--color-13) url(../../images/dec/bottom-left.svg) no-repeat bottom 1.25rem left 1.25rem;
+  padding: 3.75rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.main-contact-our h2 {
+  margin-bottom: 3.75rem;
+}
+
+.main-contact-our p {
+  margin-bottom: 0.5rem;
+}
+
+.main-contact-our-andress {
+  display: block;
+  margin-bottom: 2rem;
+  padding-left: 1.75rem;
+  background: url(../../images/icones/local.svg) no-repeat 0rem 0.125rem;
+}
+
+.main-contact-our-email a:nth-child(1) {
+  display: block;
+  padding-left: 1.75rem;
+  margin-bottom: 0.5rem;
+  background: url(../../images/icones/email.svg) no-repeat 0rem 0.125rem;
+}
+
+.main-contact-our-email a:nth-child(2) {
+  display: block;
+  padding-left: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.main-contact-our-email a:nth-child(3) {
+  display: block;
+  padding-left: 1.75rem;
+  margin-bottom: 3.75rem;
+  background: url(../../images/icones/telefone.svg) no-repeat 0rem 0.125rem;
+}
+
+.main-contact-our-email a:hover {
+  color: var(--color-0);
+}
+
+.main-contact-socialmedia {
+  display: flex;
+  gap: 2rem;
+  padding-left: 1.75rem;
+}
+
+.main-contact-user {
+  padding: 3.75rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0 5px 5px 0;
+  background: var(--color-0) url(../../images/dec/bottom-right.svg) no-repeat bottom 20px right 20px;
+}
+
+@media (max-width: 800px) {
+  .main-contact {
+    grid-template-columns: 1fr;
+  }
+
+  .main-contact-our,
+  .main-contact-user {
+    padding: 1.25rem;
+  }
+
+  .main-contact-our {
+    background-image: none;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .main-contact-user {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .main-contact-our h2,
+  .main-contact-our-email a:nth-child(3) {
+    margin-bottom: 2rem;
+  }
+
+  .main-contact-socialmedia {
+    margin-bottom: 0.75rem;
+  }
+}

@@ -13,6 +13,10 @@
   margin-bottom: 2rem;
 }
 
+.footer a:hover {
+  color: var(--color-0);
+}
+
 .footer-contact-nav {
   margin-bottom: 2rem;
 }

@@ -55,6 +55,8 @@
   padding: 1rem 2rem;
   border-radius: 0.25rem;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .main-btn:hover {
