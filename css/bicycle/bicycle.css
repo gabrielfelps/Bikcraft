@@ -1,106 +1,139 @@
-.main-bicycle-item {
+.main-bg-bicycle {
+  background: var(--color-12);
+}
+
+.main-nimbus-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
   padding-block: 3.75rem;
-  background: url(../../images/dec/top-right.svg) no-repeat top 40px right 20px;
+  align-items: start;
 }
 
-.main-bicycle-item-bg {
-  background: linear-gradient(to right, var(--color-0) 30%, var(--color-12) 0%);
+.main-nimbus-container-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
 }
 
-.main-bicycle-item-image {
-  position: relative;
+.main-nimbus-container-images img:first-child {
+  min-width: 100%;
 }
 
-.main-bicycle-item-image span {
-  position: absolute;
-  top: 1.25rem;
-  right: 0rem;
-  background: var(--color-13);
-  display: inline-block;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
-  border-radius: 0.25rem 0 0 0.25rem;
+.main-nimbus-container-images img {
+  flex: 1;
+  min-width: 200px;
 }
 
-.main-bicycle-item-info {
+.main-nimbus-container-info-buy {
   display: grid;
-  grid-template-columns: 1fr auto;
-  align-content: start;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: start;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 2.5rem;
 }
 
-.main-bicycle-item h2 {
-  margin-bottom: 1.25rem;
+.main-nimbus-container-info-buy a {
+  grid-row: span 2;
 }
 
-.main-bicycle-item h2::before {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 8px;
-  background: var(--color-p1);
-  margin-bottom: 0.5rem;
+.main-nimbus-container-info-buy span {
+  display: flex;
+  align-items: center;
+  background: var(--color-13);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  gap: 0.5rem;
 }
 
-.main-bicycle-item p {
+.main-nimbus-container-info > p {
   margin-bottom: 2rem;
 }
 
-.main-bicycle-item a {
-  place-self: end;
+.main-nimbus-container-info h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.015rem;
+  margin-bottom: 0.75rem;
 }
 
-.main-bicycle-item-info h2,
-.main-bicycle-item-info p {
-  grid-column: 1 / -1;
+.main-nimbus-container-info h3 {
+  margin-bottom: 0.5rem;
 }
 
-.main-bicycle-item-info li {
-  display: flex;
-  align-items: center;
-}
-
-.main-bicycle-item-info ul {
+.main-nimbus-container-info-list {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: var(--color-13);
+  margin-bottom: 2.5rem;
 }
 
-.main-bicycle-item-info img {
-  width: 1.5rem;
-  margin-right: 0.5rem;
+.main-nimbus-container-info-list img {
+  margin-bottom: 0.5rem;
+  width: 24px;
+}
+
+.main-nimbus-container-info-list {
+  padding: 2rem;
+  background: var(--color-13);
+  border-radius: 4px;
+}
+
+.main-nimbus-container-info-technical-list {
+  padding: 2rem;
+  background: var(--color-13);
+  border-radius: 4px;
+}
+
+.main-nimbus-container-info-technical-list li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-12);
+  padding-block: 0.25rem;
+}
+
+.main-nimbus-container-info-technical-list li:last-child {
+  border-bottom: none;
+}
+
+.main-nimbus-container-info-technical-list span {
+  color: var(--color-6);
+}
+
+@media (max-width: 1200px) {
+  .main-nimbus-container-info > p {
+    font-size: 1.125rem;
+  }
+
+  #bicycle .main-title p {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 800px) {
-  .main-bicycle-item {
+  #bicycle .main-title p {
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+
+  .main-nimbus-container {
     grid-template-columns: 1fr;
-    gap: 1.25rem;
     padding-block: 2.5rem;
-    background: none;
   }
 
-  .main-bicycle-item-bg {
-    background: var(--color-12);
-  }
-
-  .main-bicycle-item h2 {
-    font-size: 1.5rem;
+  .main-nimbus-container-images {
+    grid-row: 2;
   }
 }
 
-@media (max-width: 600px) {
-  .main-bicycle-item-info {
+@media (max-width: 400px) {
+  .main-nimbus-container-info-buy {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
-  .main-bicycle-item-info ul {
-    grid-template-columns: 1fr 1fr;
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .main-bicycle-item-info .main-btn {
-    place-self: start;
+  .main-nimbus-container-info-list {
+    grid-template-columns: 1fr;
   }
 }

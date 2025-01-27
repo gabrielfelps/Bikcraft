@@ -16,8 +16,12 @@
 @import "landpage/partners.css";
 @import "landpage/testimonials.css";
 
+/* Bicycles */
+@import "bicycles/bicycles.css";
+
 /* Bicycle */
 @import "bicycle/bicycle.css";
+@import "bicycle/insurance.css";
 
 /* Insurance */
 @import "insurance/insurance.css";

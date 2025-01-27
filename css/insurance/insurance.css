@@ -1,8 +1,8 @@
-.insurance-bg {
+.insurances-bg {
   background: var(--color-12);
 }
 
-.insurance {
+.insurances {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
@@ -11,15 +11,15 @@
   padding-block: 3.75rem;
 }
 
-#insurance .insurance {
+#insurances .insurances {
   padding-top: 0rem;
 }
 
-.insurance h2 {
+.insurances h2 {
   grid-column: 1 / -1;
 }
 
-.insurance-plan {
+.insurances-plan {
   display: grid;
   grid-template-columns: 1fr auto;
   background: var(--color-13);
@@ -27,27 +27,27 @@
   border-radius: 4px;
 }
 
-.insurance-plan h3 {
+.insurances-plan h3 {
   text-transform: uppercase;
   margin-bottom: 2.5rem;
 }
 
-.insurance-plan ul {
+.insurances-plan ul {
   grid-column: 1/-1;
   margin-bottom: 2rem;
 }
 
-.insurance-plan ul li:not(:first-child) {
+.insurances-plan ul li:not(:first-child) {
   margin-top: 1.25rem;
 }
 
-.insurance-plan li {
+.insurances-plan li {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.insurance-plan li::before {
+.insurances-plan li::before {
   content: "";
   display: inline-block;
   width: 13px;
@@ -57,35 +57,35 @@
   left: -21px;
 }
 
-.insurance-plan span {
+.insurances-plan span {
   grid-column: 2;
   display: block;
   text-align: right;
 }
 
-.insurance-plan span span {
+.insurances-plan span span {
   text-align: right;
 }
 
-.insurance-plan ul {
+.insurances-plan ul {
   grid-row-start: 2;
 }
 
-.insurance-plan a {
+.insurances-plan a {
   grid-column: 1/-1;
 }
 
 @media (max-width: 800px) {
-  .insurance {
+  .insurances {
     grid-template-columns: 1fr;
   }
 
-  .insurance h2 {
+  .insurances h2 {
     font-size: 2rem;
   }
 
-  .insurance h3,
-  .insurance-plan-price {
+  .insurances h3,
+  .insurances-plan-price {
     font-size: 1.5rem;
   }
 }
