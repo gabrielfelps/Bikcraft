@@ -44,6 +44,14 @@
     border-radius: 4px;
   }
 
+  .header-navbar a:hover {
+    background: var(--color-11);
+  }
+
+  .header-navbar-item:hover::after {
+    width: 0%;
+  }
+
   .header-navbar {
     gap: 1.25rem;
   }
