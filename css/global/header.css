@@ -33,7 +33,8 @@
   position: absolute;
 }
 
-.header-navbar-item:hover::after {
+.header-navbar-item:hover::after,
+.header-navbar-item.active::after {
   width: 100%;
 }
 
@@ -48,7 +49,8 @@
     background: var(--color-11);
   }
 
-  .header-navbar-item:hover::after {
+  .header-navbar-item:hover::after,
+  .header-navbar-item.active::after {
     width: 0%;
   }
 

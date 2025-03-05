@@ -8,6 +8,7 @@
 @import "utility/typography.css";
 @import "utility/color.css";
 @import "utility/forms.css";
+@import "utility/anim.css";
 
 /* Landpage */
 @import "landpage/main.css";
